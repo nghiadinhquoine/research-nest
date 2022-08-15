@@ -10,10 +10,6 @@
 ```
 
 ## Check list
-[ ] Todo
-[x] setup
-[x] [x] finish a feature
-
 - [x] Setup docker
 - [x] Setup Postgres
 - [ ] Migration
@@ -24,16 +20,16 @@
 - [ ] Decorator
 - [ ] Dependency Injection
 - [ ] Redis
-- [ ] [ ] Queue/ Worker/ Event job
-- [ ] [ ] event sourcing
-- [ ] [ ] event driven
-- [ ] login/signup/verify/password
+- [ ] Queue/ Worker/ Event job
+- [ ] Event sourcing
+- [ ] Event driven
+- [ ] Login/Signup/Verify/Password
 - [ ] CRUD user
 - [ ] Authentication, JWT
 - [ ] Send Email
-- [ ] [ ] Matching engine
+- [ ] Matching engine
 - [ ] Benchmark
-- [ ] [ ] Kafka (pub/sub message) (publish/ subscribe)
-- [ ] [ ] websocket
+- [ ] Kafka (pub/sub message) (publish/ subscribe)
+- [ ] Websocket
 - [ ] Deployment
 - [ ] Report/ Analytics data
