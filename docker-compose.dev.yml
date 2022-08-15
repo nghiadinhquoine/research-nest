@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  database:
+    image: postgres:11.5
+    environment:
+      POSTGRES_DB: nghia-nest
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgres/data
+    ports:
+      - 5435:5432
+    volumes:
+      - database-data:/var/lib/postgres/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 8083:8080
+    links:
+      - database
+  redis:
+    image: "redis:alpine"
+    command: redis-server --requirepass 1234512345
+    ports:
+      - 6372:6379
+    volumes:
+      - $PWD/redis-data:/var/lib/redis
+      - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+volumes:
+  database-data: {}
