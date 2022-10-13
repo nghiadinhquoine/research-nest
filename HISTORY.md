@@ -9,4 +9,6 @@
 
   npm install --save @nestjs/swagger
 
+  npm i typeorm @nestjs/config @nestjs/typeorm --save
+  npm i @nestjs/axios @nestjs/cqrs aws-sdk --save
 ```
